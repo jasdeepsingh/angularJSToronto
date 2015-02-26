@@ -17,7 +17,9 @@ var sketch = function(s) {
     };
 
     s.noFill();
-    s.stroke(254,221,20);
+    // s.stroke(254, 221, 20, 125);
+    // s.stroke(254,206,207, 125);
+    s.stroke(255, 255, 255, 75);
     s.strokeWeight(2);
     nodes = locs.length - 1;
 
@@ -26,7 +28,7 @@ var sketch = function(s) {
   }
 
   s.draw = function() {
-    s.background(237, 46, 77);
+    s.background(254, 91, 100);
     for (var i = nodes; i >= 0; i--) {
       var h = s.calcVec( locs[i].x - s.mouseX, locs[i].y - s.mouseY);
       s.push();
@@ -42,4 +44,4 @@ var sketch = function(s) {
   }
 }
 
-var myp5 = new p5(sketch, 'vector-field');
+var myp5 = new p5(sketch, 'js-vector-field');

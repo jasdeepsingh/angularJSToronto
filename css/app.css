@@ -969,58 +969,47 @@ button,
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-header {
-  background-color: #de5452;
+.hero {
+  background-color: #fe5b64;
   overflow: hidden;
   padding-left: 6.5%;
   padding-right: 6.5%; }
-  header:after {
-    background: rgba(222, 84, 84, 0.95);
-    content: '';
-    height: inherit;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: inherit; }
-  header .section-wrapper {
+  .hero__body {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     margin: 0 auto;
     max-width: 1440px;
-    padding-bottom: 35%;
+    padding-bottom: 45%;
     position: relative; }
-  header h1 {
+    @media screen and (min-width: 1200px) {
+      .hero__body {
+        padding-bottom: 512px; } }
+  .hero__title {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     bottom: 35%;
     color: #fff;
     display: block;
     font-family: "brandon-grotesque-bold", sans-serif;
-    font-size: 4em;
+    font-size: 2em;
     height: 1em;
     left: 0;
     line-height: 1;
     margin: auto;
     position: absolute;
     text-align: left;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     width: auto; }
+    @media screen and (min-width: 750px) {
+      .hero__title {
+        font-size: 4em; } }
+  .hero__vector-field {
+    height: 512px;
+    left: -7.5%;
+    position: absolute;
+    top: 0; }
 
-#vector-field {
-  height: 512px;
-  left: -7.5%;
-  position: absolute;
-  top: 0; }
-
-@media screen and (min-height: 800px) and (min-width: 1201px) {
-  header .section-wrapper {
-    padding-bottom: 512px; } }
-@media screen and (max-width: 520px) {
-  header .section-wrapper {
-    padding-bottom: 40%; }
-
-  header h1 {
-    font-size: 2.7em; } }
-@media screen and (max-width: 649px) {
-  header h1 {
-    bottom: 0;
-    top: 0; } }
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer {
@@ -1033,6 +1022,8 @@ header {
   .footer a {
     border-bottom: 0;
     color: #b4b4b4; }
+    .footer a:hover {
+      color: #000; }
   .footer .heart {
     color: #fe5b64; }
 

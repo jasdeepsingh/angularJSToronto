@@ -12,6 +12,10 @@
   a {
     border-bottom: 0;
     color: $dark-grey;
+
+    &:hover {
+      color: #000;
+    }
   }
 
   .heart {

@@ -1,62 +1,48 @@
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-header {
-  background-color: $deep-red;
+.hero {
+  background-color: $red;
   overflow: hidden;
   padding-left: 6.5%;
   padding-right: 6.5%;
 
-  &:after {
-    background: rgba(222, 84, 84, 0.95);
-    content: '';
-    height: inherit;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: inherit;
-  }
-
-  .section-wrapper {
+  &__body {
+    @include transition(all 1.0s ease-in-out);
     margin: 0 auto;
     max-width: 1440px;
-    padding-bottom: 35%;
+    padding-bottom: 45%;
     position: relative;
+
+    @media screen and (min-width: $xl) {
+      padding-bottom: 512px;
+    }
   }
 
-  h1 {
+  &__title {
+    @include transition(all 1.0s ease-in-out);
     bottom: 35%;
     color: $white;
     display: block;
     font-family: $brandon-grotesque;
-    font-size: 4em;
+    font-size: 2em;
     height: 1em;
     left: 0;
     line-height: 1;
     margin: auto;
     position: absolute;
     text-align: left;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     width: auto;
+
+    @media screen and (min-width: $md) {
+      font-size: 4em;
+    }
   }
-}
 
-#vector-field {
-  height: 512px;
-  left: -7.5%;
-  position: absolute;
-  top: 0;
-}
-
-@media screen and (min-height: 800px) and (min-width: 1201px) {
-  header .section-wrapper { padding-bottom: 512px; }
-}
-
-@media screen and (max-width: 520px) {
-  header .section-wrapper { padding-bottom: 40%; }
-  header h1 { font-size: 2.7em; }
-}
-
-@media screen and (max-width: 649px) {
-  header h1 { bottom: 0; top: 0; }
+  &__vector-field {
+    height: 512px;
+    left: -7.5%;
+    position: absolute;
+    top: 0;
+  }
 }
