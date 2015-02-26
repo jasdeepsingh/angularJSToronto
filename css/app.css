@@ -384,10 +384,10 @@ html {
 
 body {
   background-color: #fff;
-  color: #222;
+  color: #444;
   font-family: "inconsolata-medium", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.6; }
 
 a {
@@ -472,7 +472,7 @@ h4,
 h5,
 h6 {
   font-family: "inconsolata-medium", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 2rem;
   margin-top: 0; }
 
@@ -590,7 +590,7 @@ select:focus {
 label,
 legend {
   display: block;
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 0.5rem; }
 
 fieldset {
@@ -754,51 +754,55 @@ label > .label--body {
   font-family: 'inconsolata-medium';
   src: url("../fonts/inconsolata-webfont.eot");
   src: url("../fonts/inconsolata-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inconsolata-webfont.woff") format("woff"), url("../fonts/inconsolata-webfont.ttf") format("truetype"), url("../fonts/inconsolata-webfont.svg#inconsolatamedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: normal; }
 @font-face {
   font-family: 'brandon-grotesque-bold';
   src: url("../fonts/brandon_grotesque_bold.eot");
-  src: url("../fonts/brandon_grotesque_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_grotesque_bold.svg#Brandon Grotesque Bold") format("svg"), url("../fonts/brandon_grotesque_bold.woff") format("woff"), url("../fonts/brandon_grotesque_bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../fonts/brandon_grotesque_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_grotesque_bold.svg") format("svg"), url("../fonts/brandon_grotesque_bold.woff") format("woff"), url("../fonts/brandon_grotesque_bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 body {
   font-size: 2em; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FE5B64;
-  font-weight: normal; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fe5b64; }
 
-a, a:visited {
+a {
+  border-bottom: 2px solid #fedd14;
   color: #444;
-  text-decoration: none;
+  font-weight: bold;
   outline: 0;
-  border-bottom: 2px solid #FEDD14;
   padding-bottom: 4px;
-  font-weight: bold; }
-
-a:hover, a:focus {
-  color: #000;
-  border-color: #000; }
+  text-decoration: none; }
+  a:visited {
+    color: #444; }
+  a:hover, a:focus {
+    border-color: #000;
+    color: #000; }
 
 .main {
   padding: 50px 0; }
 
-p.lead {
+.lead {
   margin-bottom: 50px; }
 
 h2 {
   margin-bottom: 30px; }
 
 .add {
-  font-family: "brandon-grotesque-bold", sans-serif;
-  float: right;
+  color: #fe5b64;
   cursor: pointer;
-  color: #FE5B64;
+  float: right;
+  font-family: "brandon-grotesque-bold", sans-serif;
   opacity: 0.25; }
-
-.add:hover {
-  opacity: 1; }
+  .add:hover {
+    opacity: 1; }
 
 section {
   margin-bottom: 50px; }
@@ -872,8 +876,8 @@ button,
   border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
-  color: #95a5a6;
-  border: 1px solid #95a5a6; }
+  color: #b4b4b4;
+  border: 1px solid #b4b4b4; }
   button:hover, button:focus,
   .btn:hover,
   .btn:focus {
@@ -882,8 +886,8 @@ button,
   .btn:hover,
   .btn:focus {
     background-color: transparent;
-    border-color: #617374;
-    color: #617374; }
+    border-color: #818181;
+    color: #818181; }
 
 /* Primary Button */
 .btn--primary {
@@ -966,47 +970,43 @@ button,
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
+  background-color: #de5452;
+  overflow: hidden;
   padding-left: 6.5%;
-  padding-right: 6.5%;
-  background-color: #DE5452;
-  overflow: hidden; }
+  padding-right: 6.5%; }
+  header:after {
+    background: rgba(222, 84, 84, 0.95);
+    content: '';
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: inherit; }
+  header .section-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-bottom: 35%;
+    position: relative; }
+  header h1 {
+    bottom: 35%;
+    color: #fff;
+    display: block;
+    font-family: "brandon-grotesque-bold", sans-serif;
+    font-size: 4em;
+    height: 1em;
+    left: 0;
+    line-height: 1;
+    margin: auto;
+    position: absolute;
+    text-align: left;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    width: auto; }
 
-header:after {
-  content: '';
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  top: 0;
-  left: 0;
-  background: rgba(222, 84, 84, 0.95); }
-
-header .section-wrapper {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1440px;
-  padding-bottom: 512px;
-  padding-bottom: 35%; }
-
-header h1 {
-  bottom: 35%;
-  color: #FFF;
-  font-size: 4em;
-  font-family: "brandon-grotesque-bold", sans-serif;
-  height: 1em;
-  left: 0;
-  line-height: 1;
-  margin: auto;
-  position: absolute;
-  text-align: left;
-  width: auto;
-  display: block;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
-
-header #vector-field {
+#vector-field {
   height: 512px;
+  left: -7.5%;
   position: absolute;
-  top: 0;
-  left: -7.5%; }
+  top: 0; }
 
 @media screen and (min-height: 800px) and (min-width: 1201px) {
   header .section-wrapper {
@@ -1024,21 +1024,16 @@ header #vector-field {
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer {
-  background-color: #F3F3F3;
-  color: #B4B4B4;
+  background-color: #f3f3f3;
+  color: #b4b4b4;
   font-size: 14px;
   margin: 0;
-  text-align: center;
-  padding: 50px 0; }
-
-.footer a {
-  color: #B4B4B4;
-  border-bottom: 0; }
-
-.footer a:hover {
-  color: #444; }
-
-.footer .heart {
-  color: #FE5B64; }
+  padding: 50px 0;
+  text-align: center; }
+  .footer a {
+    border-bottom: 0;
+    color: #b4b4b4; }
+  .footer .heart {
+    color: #fe5b64; }
 
 
