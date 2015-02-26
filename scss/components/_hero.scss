@@ -1,0 +1,63 @@
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  background-color: #DE5452;
+  overflow: hidden;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(222, 84, 84, 0.95);
+}
+
+header .section-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-bottom: 512px;
+  padding-bottom: 35%;
+}
+
+header h1 {
+  bottom: 35%;
+  color: #FFF;
+  font-size: 4em;
+  font-family: "brandon-grotesque-bold", sans-serif;
+  height: 1em;
+  left: 0;
+  line-height: 1;
+  margin: auto;
+  position: absolute;
+  text-align: left;
+  width: auto;
+  display: block;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+header #vector-field {
+  height: 512px;
+  position: absolute;
+  top: 0;
+  left: -7.5%;
+}
+
+@media screen and (min-height: 800px) and (min-width: 1201px) {
+  header .section-wrapper { padding-bottom: 512px; }
+}
+
+@media screen and (max-width: 520px) {
+  header .section-wrapper { padding-bottom: 40%; }
+  header h1 { font-size: 2.7em; }
+}
+
+@media screen and (max-width: 649px) {
+  header h1 { bottom: 0; top: 0; }
+}
