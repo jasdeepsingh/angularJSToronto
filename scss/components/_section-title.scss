@@ -17,6 +17,7 @@
   }
 
   &__aside {
+    border-bottom: 0;
     color: $red;
     cursor: pointer;
     font-family: $brandon-grotesque;
@@ -28,6 +29,7 @@
 
     &:hover,
     &:active {
+      color: $red;
       opacity: 1;
     }
   }

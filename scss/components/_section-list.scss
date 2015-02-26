@@ -18,6 +18,7 @@
 
   &__item {
     border-bottom: 0;
+    color: lighten($black, 10%);
     display: block;
     line-height: 2.5;
     overflow: hidden;

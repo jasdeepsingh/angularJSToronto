@@ -1038,6 +1038,7 @@ button,
     margin: 0;
     padding-left: 2rem; }
   .section-title__aside {
+    border-bottom: 0;
     color: #fe5b64;
     cursor: pointer;
     font-family: "brandon-grotesque-bold", sans-serif;
@@ -1047,6 +1048,7 @@ button,
     text-align: center;
     width: 50px; }
     .section-title__aside:hover, .section-title__aside:active {
+      color: #fe5b64;
       opacity: 1; }
 
 /* Section List
@@ -1075,6 +1077,7 @@ button,
       border-bottom: 1px solid #b4b4b4; }
   .section-list__item {
     border-bottom: 0;
+    color: #5e5e5e;
     display: block;
     line-height: 2.5;
     overflow: hidden;
