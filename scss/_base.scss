@@ -1,7 +1,7 @@
 
 /* Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-// #Font-Face
+// Font-Face
 @font-face {
   font-family: 'inconsolata-medium';
   src: url('../fonts/inconsolata-webfont.eot');
@@ -52,28 +52,29 @@ a {
   }
 }
 
-.main {
-  padding: 50px 0;
+// Container
+.container--main {
+  padding: 4*$base-spacing 0;
 }
 
-.lead { margin-bottom: 50px; }
+.container__lead {
+  font-size: 2.0rem;
+  margin-bottom: 8*$base-spacing;
+  text-align: center;
 
-h2 {
-  margin-bottom: 30px;
+  @media (min-width: $md) {
+    font-size: 2.4rem;
+  }
 }
 
-.add {
-  color: $red;
-  cursor: pointer;
-  float: right;
-  font-family: $brandon-grotesque;
-  opacity: 0.25;
 
-  &:hover { opacity: 1; }
-}
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 8*$base-spacing;
+
+  p {
+    padding: 0 2*$base-spacing;
+  }
 }
 
 ul {
