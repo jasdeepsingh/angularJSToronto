@@ -9,7 +9,7 @@
   padding: 50px 0;
   text-align: center;
 
-  a {
+  &__rangleio {
     border-bottom: 0;
     color: $dark-grey;
 
@@ -18,7 +18,7 @@
     }
   }
 
-  .heart {
+  &__heart {
     color: $red;
   }
 }

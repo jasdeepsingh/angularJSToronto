@@ -780,8 +780,6 @@ a {
   outline: 0;
   padding-bottom: 4px;
   text-decoration: none; }
-  a:visited {
-    color: #444; }
   a:hover, a:focus {
     border-color: #000;
     color: #000; }
@@ -1019,12 +1017,12 @@ button,
   margin: 0;
   padding: 50px 0;
   text-align: center; }
-  .footer a {
+  .footer__rangleio {
     border-bottom: 0;
     color: #b4b4b4; }
-    .footer a:hover {
+    .footer__rangleio:hover {
       color: #000; }
-  .footer .heart {
+  .footer__heart {
     color: #fe5b64; }
 
 
